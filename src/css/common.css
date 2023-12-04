@@ -1,0 +1,180 @@
+@charset "utf-8";
+:root {
+  /* 🖋️Gray Scales */
+  --gray-0: #FFF;
+  --gray-100: #F8F8F8;
+  --gray-200: #E9EBED;
+  --gray-300: #CACDD2;
+  --gray-400: #9FA4A9;
+  --gray-500: #73787E;
+  --gray-600: #464C52;
+  --gray-700: #26282B;
+  --gary-800: #1B1D1F;
+  --gray-999: #OOO;
+  --chrcoal-999: #384452;
+
+  /* 🖋️️Type */
+  --text-primary: var(--gray-700);
+  --text-secondary: var(--gray-600);
+  --text-teritary: var(--gray-400);
+  --text-info: var(--gray-400);
+  --text-positive: var(--status-lv-00);
+  --text-nagative: var(--status-lv-04);
+  --text-delay: var(--status-lv-03);
+
+  /* 🚨status */
+  --status-lv-00: #067CFD;
+  --status-lv-01: #00C400;
+  --status-lv-02: #F4BF6E;
+  --status-lv-03: #FA560E;
+  --status-lv-04: #FF4852;
+
+  /* 💄Primary  */
+  --dk-mint-100: #cff2ed;
+  --dk-mint-200: #afe9e1;
+  --dk-mint-300: #8fdfd4;
+  --dk-mint-400: #6fd6c8;
+  --dk-mint-500: #4fcdbc;
+  --dk-mint-600: #35beac;
+  --dk-mint-700: #2c9f8f;
+  --dk-mint-800: #1f9389;
+  --dk-mint-900: #237f73;
+
+  --dk-orange-100: #FEF7F1;
+  --dk-orange-200: #fce8d8;
+  --dk-orange-300: #fbd7bb;
+  --dk-orange-400: #f9c59e;
+  --dk-orange-500: #fbb582;
+  --dk-orange-600: #f6a363;
+  --dk-orange-700: #fb9851;
+  --dk-orange-800: #f59246;
+  --dk-orange-900: #f38129;
+
+  --dk-dgb-100: #edf6f7;
+  --dk-dgb-200: #c9e2e8;
+  --dk-dgb-300: #74a5be;
+  --dk-dgb-400: #4e89a6;
+  --dk-dgb-500: #447791;
+  --dk-dgb-600: #3a667c;
+  --dk-dgb-700: #305568;
+  --dk-dgb-800: #274553;
+  --dk-dgb-900: #1d333e;
+
+  --grd-gray: linear-gradient(46deg, #1B1D1F 0%, #464C52 100%);
+  --grd-mint: linear-gradient(46deg, #2D9F90 0%, #50CEBD 100%);
+  --grd-dgb: linear-gradient(46deg, #315668 0%, #4E89A6 100%);
+  --grd-org: linear-gradient(46deg, #FB9851 0%, #FCB583 100%);
+
+  --character-primary-inverse: #FFF;
+  --label-color-dark-primary: #FFF; 
+
+  --bgzt-primary: #D80C18;
+  --naver-primary: #03C75A;
+
+  /* Border */
+  --border-01: var(--gray-200);
+
+  /* Shadow */
+  --shadow-lv-01: 0px 0px 4px 0px rgba(32, 32, 32, 0.20);
+
+
+  /* Breakpoint */
+  --breakpoint-desktop: 1200px;
+  --breakpoint-tablets: 768px;
+  --breakpoint-mobile: 360px;
+
+  /*!* tablets (가로 해상도가 768px 보다 크고 991px 보다 작은 화면에 적용)  *!*/
+  /*@media (min-width: 768px) and (max-width: 991px) {...}*/
+
+  /*!* desktop sub (가로 해상도가 992px 보다 크고 1199px 보다 작은 화면에 적용)  *!*/
+  /*@media (min-width: 992px) and (max-width: 1199px) {...}*/
+
+  /*!* desktop main (가로 해상도가 1200px 보다 큰 화면에 적용)  *!*/
+  /*@media (min-width: 1200px) {...}*/
+}
+
+/* skip navigation */
+#u_skip{position:relative;z-index:1000;margin-left:20px}
+#u_skip a{position:absolute;top:-30px;left:0;width:128px;border:1px solid #4ec53d;background:url(../img/spr_u_skip.png) repeat-x 0 -11px;text-align:center;outline:none}
+#u_skip a:active,#u_skip a:focus{top:0;text-decoration:none;cursor:pointer;zoom:1}
+#u_skip span{display:inline-block;padding:2px 6px 0 0;background:url(../img/spr_u_skip.png) no-repeat 100% 11px;font-size:11px;line-height:26px;color:var(--gary-0);letter-spacing:-1px}
+
+/* header */
+.header { width: 100%; }
+
+/* navbar */
+.navbar {
+  display: flex; /*한 줄에 나란히*/
+  justify-content: space-between; /*스페이스를 사이사이에 넣음*/
+  align-items: center; /*중앙 배치*/
+  background-color: var(--dk-dgb-800);
+  padding: 8px 12px; /*navbar 크기 조정*/
+}
+a{
+  text-decoration: none;/*.없앰*/
+  color: white;
+}
+.navbar_logo {
+  font-size: 24px;
+  color : white;
+}
+.navbar_logo img {
+  width: 5.25rem;    
+}
+.navbar_menu {
+  display: flex; /*한 줄에 하나씩 나옴*/
+  list-style:none; /*홈이 같지 않음*/
+  padding-left: 0; /*이렇게 지정해서 중앙에 배치*/
+}
+.navbar_menu li {
+  padding: 8px 12px; /*메뉴안 내용들의 간격 조정*/
+}
+.navbar_menu li:hover {/*클릭시 색깔 변함*/
+  background-color: #d49466;
+  border-radius: 4px; /*모서리 둥글게*/
+}
+.navbar_info{
+  color: var(--gary-0);
+  display: flex;
+  list-style:none;    
+  padding-left: 0; /*중앙 배치*/
+}
+.navbar_info li {
+  padding: 8px 12px;
+}
+.navbar_toogleBtn { /*위치 조정*/
+  display: none; /*큰 크기때는 안 보이게 함*/
+  position: absolute; /*제일 위에 배치*/
+  right: 32px; /*오른쪽에서 32px 떨어진 곳에 배치*/
+  font-size: 24px;
+  color: var(--gary-0);
+}
+
+@media screen and (max-width: 1075px) { /*영상에선 768px*/
+  .navbar {
+      flex-direction: column; /*기존은 row, column으로 아래로 내림*/
+      align-items: flex-start; /*왼쪽으로 이동*/
+  }
+  .navbar_menu{
+      display: none; /*화면에서 사라짐*/
+      flex-direction: column;
+      align-items: center; /*중앙배치*/
+      width: 100% /*align-items가 반응하지 않는 부분을 width가 보완*/
+  }
+  .navbar_menu li{ /*hover부분이 넓어짐*/
+      width: 100%; 
+      text-align: center;
+  }
+  .navbar_info {
+      display: none; 
+      justify-content: center; /*중앙 배치*/
+      width: 100%;
+  }
+  .navbar_toogleBtn{/*화면이 작아질때만 표시되도록 함*/
+      display: block; 
+  }
+  .navbar_menu.active,
+  .navbar_info.active { /*navbar_toogleBtn이 클릭시 활성화*/
+      display: flex;    
+  }
+}
