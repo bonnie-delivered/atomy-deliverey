@@ -6,12 +6,250 @@
   <title>demo</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
   
-  <link rel="stylesheet" href="/resources/css/common/reset.css">
-  <link rel="stylesheet" href="/resources/css/common/font-face.css">
-  <link rel="stylesheet" href="/resources/css/common/common.css"> 
+  <link rel="stylesheet" href="/src/css/reset.css">
+  <link rel="stylesheet" href="/src/css/font-face.css">
+  <link rel="stylesheet" href="/src/css/common.css"> 
 </head>
 <body>
-  
+  <!-- start header -->
+  <header class="header">
+    <img src="/src/images/" alt="">
+    <span>Delivery Information</span>
+  </header>
+    <!-- end header -->
+
+  <!-- start main -->
+  <main class="main">
+    <!-- start shipment_travel_history -->
+    <section class="shipment_travel_history">
+      <h3>shipment travel history</h3>
+      <div class="tracking-wrapper">
+        <div class="tracking">
+          <div id="progress" class="progress-0">
+            <div class="empty-bar"></div>
+            <div class="color-bar"></div>
+            <ul>
+              <li class="bullet-1">
+                <div class="el"><i class="fas fa-check"></i></div>
+                <div class="txt">Orders confirm</div>
+              </li>
+              <li class="bullet-2">
+                <div class="el"><i class="fas fa-check"></i></div>
+                <div class="txt">Ship Out</div>
+              </li>
+              <li class="bullet-3">
+                <div class="el"><i class="fas fa-check"></i></div>
+                <div class="txt">In transit</div>
+              </li>
+              <li class="bullet-4">
+                <div class="el"><i class="fas fa-check"></i></div>
+                <div class="txt">Delivered</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!-- start test button -->
+      <div class="controls">
+        <div>
+          <button id="prev">prev</button>
+          <button id="next">next</button>
+        </div>
+        <div>
+          <p>Step check: <span id="step">0</span></p>
+        </div>
+      </div>
+      <!-- end test button -->
+
+    </section>
+    <!-- end shipment_travel_history -->
+
+    <!-- start item_info -->
+    <section class="item_info">
+      <h3>item info</h3>
+      <div class="__order_number">
+        <h4>order number</h4>
+        <p>ayymmdd-1234</p>
+      </div>
+      <ul class="__item_info_veiw">
+        <li>
+          <p>order date</p>
+          <p>yyyy-mm-dd</p>
+        </li>
+        <li>
+          <p>order status</p>
+          <p>yyyy-mm-dd</p>
+        </li>
+        <li>
+          <p>item</p>
+          <p>yyyy-mm-dd</p>
+        </li>
+        <li>
+          <p>total quantity</p>
+          <p>yyyy-mm-dd</p>
+        </li>
+      </ul>
+    </section>
+    <!-- end item_info -->
+
+    <!-- start delivery_info -->
+    <section class="delivery_info">
+      <h3>delivery info</h3>
+      <ul class="__delivery_info_table">
+        <li>
+          <p>carrier</p>
+          <p><a href="#" class="LinkToCarrier">운송사명</a></p>
+        </li>
+        <li>
+          <p>tracking</p>
+          <p><span id="TrackingNo">abc23123456789</span><a id="ClipboardCopy" class="btn_copy_text">copy</a></p>
+        </li>
+        <li>
+          <p>DK Traking</p>
+          <p>DEF23123456789</p>
+        </li>
+        <li>
+          <p>sender</p>
+          <p>ghi23123456789</p>
+        </li>
+        <li>
+          <p>departure adress</p>
+          <p>Yunsulo 324 8, Su-young-gu, Busan, Korea</p>
+        </li>
+        <li>
+          <p>reciever</p>
+          <p>jkl23123456789</p>
+        </li>
+        <li>
+          <p>arrival adress</p>
+          <p>3000, Pluto St San Felipe Sub Mojon, 103, PH, Pluto St San Felipe Sub Mojon, 103, PH</p>
+        </li>
+      </ul>
+    </section>
+    <!-- end delivery_info -->
+
+    <!-- start delivery_details -->
+    <section class="delivery_details">
+      <h3>delivery details</h3>
+
+      <div class="__delivery_history">
+          <!-- sample / start __delivery_site B -->
+          <div class="__delivery_site">
+            <h3><img src="/src/images/" alt="delivery logo">site title B </h3>
+            <ul id="order-tracking" class="__progress-bar">
+              <li class="isPkgArrived">
+                  <ul class="__delivery_site__detail">
+                    <li>
+                      <p>YYYY.MM.DD(HH:MM:SS)</p>-<p>AvailableForPickup</p>
+                    </li>
+                    <li>
+                      <p>현재위치</p>,<p>TAG - Sub Tag</p>
+                    </li>
+                  </ul> 
+              </li>
+
+                <li class="">
+                  <ul class="__delivery_site__detail">
+                    <li>
+                      <p>YYYY.MM.DD(HH:MM:SS)</p>-<p>AvailableForPickup</p>
+                    </li>
+                    <li>
+                      <p>현재위치</p>,<p>TAG - Sub Tag</p>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+          </div>
+          <!-- sample / end __delivery_site B -->
+          <!-- sample / start __delivery_site  A -->
+          <div class="__delivery_site">
+            <h3><img src="/src/images/" alt="delivery logo">site title A</h3>
+            <ul id="OrderTracking" class="__progress-bar">
+              <li class="">
+                  <ul class="__delivery_site__detail">
+                    <li>
+                      <p>YYYY.MM.DD(HH:MM:SS)</p>-<p>AvailableForPickup</p>
+                    </li>
+                    <li>
+                      <p>현재위치</p>,<p>TAG - Sub Tag</p>
+                    </li>
+                  </ul> 
+              </li>
+              <li class="">
+                <ul class="__delivery_site__detail">
+                  <li>
+                    <p>YYYY.MM.DD(HH:MM:SS)</p>-<p>AvailableForPickup</p>
+                  </li>
+                  <li>
+                    <p>현재위치</p>,<p>TAG - Sub Tag</p>
+                  </li>
+                </ul> 
+               </li>
+                <li class="">
+                  <ul class="__delivery_site__detail">
+                    <li>
+                      <p>YYYY.MM.DD(HH:MM:SS)</p>-<p>AvailableForPickup</p>
+                    </li>
+                    <li>
+                      <p>현재위치</p>,<p>TAG - Sub Tag</p>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+          <!-- sample / end __delivery_site  A -->
+      </div>
+
+      <button class="btn_view_more">close/view more</button>
+    </section>
+    <!-- end delivery_details -->
+
+  </main>
+  <!-- end main -->
+
+  <!-- start footer -->
+  <footer class="footer">
+    <span>2020-2022 Delivered Korea. All Rights Reserved.</span>
+  </footer>
+  <!-- end footer -->
+
 </body>
+<script>
+  // 아래는 담당개발자의 기능 구현을 돕기 위한 UI prototype 입니다. 
+  // user action 확인 후 삭제 하시면 됩니다.
+
+  // Delivery Tracking Status Demo: Style the status
+  let prev = document.getElementById('prev'); // Test button
+  let next = document.getElementById('next'); // Test button
+  let trak = document.getElementById('progress');
+  let step = document.getElementById('step'); // Check count
+
+  next.addEventListener('click', function(){
+    let cls = trak.className.split('-').pop();
+    cls > 6 ? cls = 0 : cls++;
+    
+    step.innerHTML = cls;
+    trak.className = 'progress-' + cls;
+  });
+
+  prev.addEventListener('click', function(){
+    let cls = trak.className.split('-').pop();
+    cls < 1 ? cls = 7 : cls--;
+    
+    step.innerHTML = cls;
+    trak.className = 'progress-' + cls;
+  });
+
+  // Clipboard Copy Demo: button click event
+  const TrackingNo = document.getElementById("TrackingNo");
+  document.getElementById("ClipboardCopy").onclick = () => {
+    window.navigator.clipboard.writeText(TrackingNo.textContent).then(() => {
+      alert("Copy Done");
+    });
+  };
+
+</script>
 </html>
