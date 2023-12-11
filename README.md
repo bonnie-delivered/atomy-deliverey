@@ -1,5 +1,6 @@
 # 애터미 배송 정보
 🔗[기획안 바로가기](https://www.figma.com/file/drBDEvlv8wB40aOV9ACBHV/Front_Delivery_info?type=design&node-id=26%3A24&mode=design&t=C2t0XxzPydtDJ9Yv-1)
+
 🔗[작업용 시안 바로가기](https://www.figma.com/file/MNsVR2X0JMnjeI6Tu14l1T/%F0%9F%9F%A1-Deliveryinfo?type=design&node-id=256%3A3424&mode=design&t=PeFIEKsDZTwfIizY-1)
 
 #### pages
